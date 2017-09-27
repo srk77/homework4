@@ -37,9 +37,9 @@
  	 
 	  $str1='Welcome to WSD Course';
 	 $obj->splitString($str1);
-  	 /*
-	 $obj->countWord($str1);
-	 $obj->stringLength($name);
+  	 $obj->countWord($str1);
+	 
+	 /*$obj->stringLength($name);
 	 $obj->reverseString($name);
 	 $str2=	" WSD is a very interesting subject and I LIKE it ";
 	 $obj->toUpper($str2);
@@ -131,35 +131,46 @@
 
          public function formatString($num,$location,$format)
 	          {
-		           echo '<h1>1. Format String Function</h1>';
+		           echo '<h1> Format String Function</h1>';
 			            echo sprintf($format, $num, $location);
                            echo '<hr>';
 			   }
 	public function padString($name)
 	 	{
-		echo '<h1>2. Padding String Function</h1>';
+		echo '<h1>Padding String Function</h1>';
 		echo str_pad($name, 20, "--", STR_PAD_BOTH);
 		echo '<hr>';
 	        }
         public function repeatString($location)
 	{
-	echo '<h1>3. Repeat String Function</h1>';
+	echo '<h1>Repeat String Function</h1>';
 	echo str_repeat($location, 10);
 	echo '<hr>';
 	}
         
 	public function shuffleString($name)
 		{
-		echo '<h1>4. shuffle String Function</h1>';
+		echo '<h1>shuffle String Function</h1>';
 		echo str_shuffle($name);
 		echo '<hr>';
 		}
        public function splitString($str1)
 	{
-	echo '<h1>5. Split String Function</h1>';
+	echo '<h1> Split String Function</h1>';
 	print_r (str_split($str1,5));
 	echo '<hr>';
          }
+        public function countWord($str1)
+		{
+	echo '<h1>String Word Count Function</h1>';
+	echo '<h4>String : </h4>';
+	echo $str1;
+	echo '<br>';
+	echo '<h4>word Count : </h4>';
+	print_r (str_word_count($str1,0));
+        echo '<hr>';
+	}
+
 
 
  public function __destruct() 
