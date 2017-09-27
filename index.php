@@ -44,9 +44,9 @@
 
 	$str2=	" WSD is a very interesting subject and I LIKE it ";
 	 $obj->toUpper($str2);
-     /*
+    
          $obj->toLower($str2);
-*/
+
          class main {
  
         public function __construct() 
@@ -203,6 +203,16 @@
 		echo '<br>';
 		echo '<h4>Uppercased string : </h4>';
 		echo strtoupper($str2);
+	        echo '<hr>';
+		}
+		public function toLower($str2)
+		{
+		echo '<h1>String to lowercase Function</h1>';
+	     	echo '<h4>String : </h4>';
+		echo $str2;
+		echo '<br>';
+		echo '<h4>Lowercased string : </h4>';
+		echo strtolower($str2);
 	        echo '<hr>';
 		}
 
