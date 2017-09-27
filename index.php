@@ -30,9 +30,10 @@
 
          $name = 'Shweta Kumthekar';
 	 $obj->padString($name);
-	 /*
+	 
 	 $obj->repeatString($location);
-	 $obj->shuffleString($name);
+	 
+	 /*$obj->shuffleString($name);
  	  
 	  $str1='Welcome to WSD Course';
 	 $obj->splitString($str1);
@@ -139,8 +140,12 @@
 		echo str_pad($name, 20, "--", STR_PAD_BOTH);
 		echo '<hr>';
 	        }
-         
-
+        public function repeatString($location)
+	{
+	echo '<h1>3. Repeat String Function</h1>';
+	echo str_repeat($location, 10);
+	echo '<hr>';
+	}
 
     
  public function __destruct() 
