@@ -21,11 +21,29 @@
         $obj->addElements($array1);
 	$obj->arrayValues($array3);
         
+     /* String Variables */
 
+         $num = 6;
+	 $location = 'kolhapur';
+	 $format = 'I love %d my %s';
+	 $obj->formatString($num,$location,$format);
 
-
-
-	class main {
+         $name = 'Shweta Kumthekar';
+	 $obj->padString($name);
+	 /*
+	 $obj->repeatString($location);
+	 $obj->shuffleString($name);
+ 	  
+	  $str1='Welcome to WSD Course';
+	 $obj->splitString($str1);
+  	 $obj->countWord($str1);
+	 $obj->stringLength($name);
+	 $obj->reverseString($name);
+	 $str2=	" WSD is a very interesting subject and I LIKE it ";
+	 $obj->toUpper($str2);
+	 $obj->toLower($str2);
+*/
+         class main {
  
         public function __construct() 
 	{
@@ -109,9 +127,23 @@
 	   echo '<hr>';
 	  }
 
+         public function formatString($num,$location,$format)
+	          {
+		           echo '<h1>1. Format String Function</h1>';
+			            echo sprintf($format, $num, $location);
+                           echo '<hr>';
+			   }
+	public function padString($name)
+	 	{
+		echo '<h1>2. Padding String Function</h1>';
+		echo str_pad($name, 20, "--", STR_PAD_BOTH);
+		echo '<hr>';
+	        }
+         
 
 
-	   public function __destruct() 
+    
+ public function __destruct() 
 	   {
            	echo '</br> I\'m Done';
             } 
