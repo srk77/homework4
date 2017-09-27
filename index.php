@@ -40,8 +40,9 @@
   	 $obj->countWord($str1);
 	 
 	$obj->stringLength($name);
-	/* $obj->reverseString($name);
-	 $str2=	" WSD is a very interesting subject and I LIKE it ";
+	 $obj->reverseString($name);
+	/*
+	$str2=	" WSD is a very interesting subject and I LIKE it ";
 	 $obj->toUpper($str2);
 	 $obj->toLower($str2);
 */
@@ -173,13 +174,24 @@
 
         public function stringLength($name)
 	{
-	echo '<h1>7. String length Function</h1>';
+	echo '<h1>String length Function</h1>';
 	echo '<h4>String : </h4>';
 	echo $name;
 	echo '<br>';
 	echo '<h4>String Length : </h4>';
 	echo strlen($name);
         echo '<hr>';
+	}
+
+       public function reverseString($name)
+       	{
+	echo '<h1>String reverse Function</h1>';
+	echo '<h4>String : </h4>';
+	echo $name;
+	echo '<br>';
+	echo '<h4>Reversed string : </h4>';
+	echo strrev($name);
+	echo '<hr>';
 	}
 
 
