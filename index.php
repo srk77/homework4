@@ -41,10 +41,11 @@
 	 
 	$obj->stringLength($name);
 	 $obj->reverseString($name);
-	/*
+
 	$str2=	" WSD is a very interesting subject and I LIKE it ";
 	 $obj->toUpper($str2);
-	 $obj->toLower($str2);
+     /*
+         $obj->toLower($str2);
 */
          class main {
  
@@ -193,6 +194,17 @@
 	echo strrev($name);
 	echo '<hr>';
 	}
+
+        public function toUpper($str2)
+		{
+		echo '<h1>String to uppercase Function</h1>';
+		echo '<h4>String : </h4>';
+		echo $str2;
+		echo '<br>';
+		echo '<h4>Uppercased string : </h4>';
+		echo strtoupper($str2);
+	        echo '<hr>';
+		}
 
 
 
