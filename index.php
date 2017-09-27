@@ -33,8 +33,8 @@
 	 
 	 $obj->repeatString($location);
 	 
-	 /*$obj->shuffleString($name);
- 	  
+	$obj->shuffleString($name);
+ 	 /*
 	  $str1='Welcome to WSD Course';
 	 $obj->splitString($str1);
   	 $obj->countWord($str1);
@@ -146,6 +146,13 @@
 	echo str_repeat($location, 10);
 	echo '<hr>';
 	}
+        
+	public function shuffleString($name)
+		{
+		echo '<h1>4. shuffle String Function</h1>';
+		echo str_shuffle($name);
+		echo '<hr>';
+		}
 
     
  public function __destruct() 
