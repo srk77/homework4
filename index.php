@@ -39,8 +39,8 @@
 	 $obj->splitString($str1);
   	 $obj->countWord($str1);
 	 
-	 /*$obj->stringLength($name);
-	 $obj->reverseString($name);
+	$obj->stringLength($name);
+	/* $obj->reverseString($name);
 	 $str2=	" WSD is a very interesting subject and I LIKE it ";
 	 $obj->toUpper($str2);
 	 $obj->toLower($str2);
@@ -170,6 +170,19 @@
 	print_r (str_word_count($str1,0));
         echo '<hr>';
 	}
+
+        public function stringLength($name)
+	{
+	echo '<h1>7. String length Function</h1>';
+	echo '<h4>String : </h4>';
+	echo $name;
+	echo '<br>';
+	echo '<h4>String Length : </h4>';
+	echo strlen($name);
+        echo '<hr>';
+	}
+
+
 
 
 
