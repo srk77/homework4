@@ -34,10 +34,11 @@
 	 $obj->repeatString($location);
 	 
 	$obj->shuffleString($name);
- 	 /*
+ 	 
 	  $str1='Welcome to WSD Course';
 	 $obj->splitString($str1);
-  	 $obj->countWord($str1);
+  	 /*
+	 $obj->countWord($str1);
 	 $obj->stringLength($name);
 	 $obj->reverseString($name);
 	 $str2=	" WSD is a very interesting subject and I LIKE it ";
@@ -153,8 +154,14 @@
 		echo str_shuffle($name);
 		echo '<hr>';
 		}
+       public function splitString($str1)
+	{
+	echo '<h1>5. Split String Function</h1>';
+	print_r (str_split($str1,5));
+	echo '<hr>';
+         }
 
-    
+
  public function __destruct() 
 	   {
            	echo '</br> I\'m Done';
